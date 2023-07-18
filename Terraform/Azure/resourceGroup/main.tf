@@ -1,5 +1,5 @@
 module "rg" {
-   source = "../../resourceGroup"
+   source = "../../modules/Azure/resourceGroup"
    resourceGroup = var.resourceGroup
    region = var.region
 }
