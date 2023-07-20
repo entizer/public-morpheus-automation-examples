@@ -15,6 +15,3 @@ variable "bucket_prefix" {
   type        = string
   description  = "Unique name of the bucket"
 }
-variable "acl_value" {
-  default = "private"
-}
