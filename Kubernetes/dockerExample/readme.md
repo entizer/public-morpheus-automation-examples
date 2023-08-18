@@ -27,10 +27,10 @@ At this point, your image is created.  However, you'll want to host this image s
    https://www.docker.com/
 2. Login to Docker:  
    `docker login`
-3. Build the previous image again but this time with your username before the imagename, example:
+3. Build the previous image again but this time with your username before the imagename, example:  
    `docker build -t entizer/dockerexample:latest .`
-4. Information on the Docker image can be seen by running the following command:
+4. Information on the Docker image can be seen by running the following command:  
    `docker images`
-5. Finally, push the image to your Docker Hub:
+5. Finally, push the image to your Docker Hub:  
    `docker push entizer/dockerexample:latest`
 6. You should now have a repository created in Docker Hub and your tagged image of `latest` available to be used in projects

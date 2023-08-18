@@ -26,7 +26,7 @@ The Nginx Ingress Controller will be used in this example, but other alternative
 4. Clone this repository:  
    `git clone https://github.com/entizer/public-morpheus-automation-examples`
 5. Navigate to the `Kubernetes/kubernetesExample` directory
-6. Run the following command to apply all Kubernetes manifest files in the `ingress` directory
+6. Run the following command to apply all Kubernetes manifest files in the `ingress` directory:  
    `docker apply -f ./ingress/`
 
    *Note that these files will be applied in alphabetical order.  Alternatively, each file could be deployed one by one as well.  Although the order may not matter, the files have been labeled for consistency with the documentation:  
@@ -47,7 +47,7 @@ The Nginx Ingress Controller will be used in this example, but other alternative
 
    *Note that these files will be applied in alphabetical order.  Alternatively, each file could be deployed one by one as well.  In this case, we need to ensure the namespace is created first, otherwise the order will not usually matter.
 
-4. Edit the `hosts` file on the local client to resolve `k8s.myurl.local` (or the modified URL) to an IP address of a `worker`` in the cluster, example location for Windows:
+4. Edit the `hosts` file on the local client to resolve `k8s.myurl.local` (or the modified URL) to an IP address of a `worker` in the cluster, example location for Windows:  
    `C:\Windows\System32\drivers\etc\hosts`
 
 5. Once the URL is resolving successfully, navigate to one of the cluster worker IPs.  Each worker will have an Ingress Controller deployed since it is a daemonset, which will reverse proxy HTTP traffic to the backend.  The web site for the dockerExample image that has been deployed should appear.  
@@ -61,8 +61,8 @@ The Nginx Ingress Controller will be used in this example, but other alternative
      `docker delete -f ./testApp/`  
      `docker delete -f ./ingress/`
 
-   2. Delete the deployments via the namespace:
-     `kubectl delete namespace testapp`
+   2. Delete the deployments via the namespace:  
+     `kubectl delete namespace testapp`  
      `kubectl delete namespace nginx-ingress`
 
 ## Additional Helpful Commands
