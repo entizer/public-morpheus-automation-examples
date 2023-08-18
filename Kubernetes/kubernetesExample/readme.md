@@ -2,7 +2,7 @@
 
 ## General
 
-This project assumes and available image/container will be used and is accessible to the Kubernetes cluster, either in Docker Hub or a local registry.  This guide will incorporate the image created using the `Kubernetes/dockerExample`, which is contained in this Git repo.  If a basic image is needed, follow the guide for dockerExample and create an image before proceeding, or use a publically available image
+This project assumes an available image/container will be used and is accessible to the Kubernetes cluster, either in Docker Hub or a local registry.  This guide will incorporate the image created using the `Kubernetes/dockerExample`, which is contained in this Git repo.  If a basic image is needed, follow the guide for dockerExample and create an image before proceeding, or use a publically available image
 
 There is also the assumption that a working and available Kubernetes cluster is accessible.  If using Morpheus, an MKS cluster can be deployed to on-premises (or public cloud) or an EKS, AKS, or GKE cluster can be deployed as well.  These are the easier to deploy but any should work.
 
