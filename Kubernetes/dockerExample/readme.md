@@ -27,6 +27,7 @@ At this point, your image is created.  However, you'll want to host this image s
    https://www.docker.com/
 2. Login to Docker:  
    `docker login`
+3. If not already there, navigate to the `Kubernetes/dockerExample` directory
 3. Build the previous image again but this time with your username before the imagename, example:  
    `docker build -t entizer/dockerexample:latest .`
 4. Information on the Docker image can be seen by running the following command:  
