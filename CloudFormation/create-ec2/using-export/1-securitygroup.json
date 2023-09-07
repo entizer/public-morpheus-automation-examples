@@ -2,7 +2,7 @@
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
         "vcpid": {
-            "Type": "String"
+            "Type": "AWS::EC2::VPC::Id"
         }
     },
     "Resources": {

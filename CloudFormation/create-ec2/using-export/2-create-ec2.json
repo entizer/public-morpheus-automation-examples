@@ -2,14 +2,14 @@
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
         "keyname": {
-            "Type": "String"
+            "Type": "AWS::EC2::KeyPair::KeyName"
         },
         "imageid": {
-            "Type": "String",
+            "Type": "AWS::EC2::Image::Id",
             "Default": "ami-024e6efaf93d85776"
         },
         "subnetid": {
-            "Type": "String"
+            "Type": "AWS::EC2::Subnet::Id"
         }
     },
     "Resources": {
