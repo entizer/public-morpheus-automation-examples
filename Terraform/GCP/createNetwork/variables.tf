@@ -24,3 +24,8 @@ variable "project_id" {
   type        = string
   description = "ID of the project to create resources in"
 }
+
+variable "network_name" {
+  type        = string
+  description = "Name of the network to be created, which will contain subnets"
+}
